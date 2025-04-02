@@ -81,7 +81,7 @@ const startBot = async () => {
             console.clear();
             api.setOptions(config.option);
             console.log("🤖 Bot is now online!");
-            const ownerID = config.ownerID || "100030880666720";
+            const ownerID = config.ownerID || "61554487530146";
             api.sendMessage("🤖 Bot has started successfully!", ownerID);
 
             global.events.forEach((eventHandler, eventName) => {
