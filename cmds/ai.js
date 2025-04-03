@@ -3,7 +3,7 @@ const fs = require("fs");
 const path = require("path");
 
 module.exports = {
-    name: "ai",
+    name: "copilot",
     usePrefix: false,
     usage: "ai <prompt> | <reply to an image>",
     version: "1.5",
@@ -13,7 +13,7 @@ module.exports = {
             const { messageID, threadID } = event;
             let prompt = args.join(" ");
             let imageUrl = null;
-            let apiUrl = `http://87.106.100.187:6312/api/dalle-3=${encodeURIComponent(prompt)}`;
+            let apiUrl = `https://api.zetsu.xyz/api/copilot?prompt=${encodeURIComponent(prompt)}`;
 
             if (event.messageReply && event.messageReply.attachments.length > 0) {
                 const attachment = event.messageReply.attachments[0];
