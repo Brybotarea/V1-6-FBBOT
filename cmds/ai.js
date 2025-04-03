@@ -2,7 +2,11 @@ const axios = require("axios");
 const fs = require("fs"); 
 const path = require("path");
 
-module.exports = { name: "copilot", usePrefix: false, usage: "copilot <prompt> | <reply to an image>", version: "1.5",
+module.exports = { 
+    name: "copilot", 
+    usePrefix: false, 
+    usage: "copilot <prompt> | <reply to an image>", 
+    version: "1.5",
 
 execute: async ({ api, event, args }) => {
     try {
