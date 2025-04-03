@@ -5,7 +5,7 @@ const path = require("path");
 module.exports = {
     name: "copilot",
     usePrefix: false,
-    usage: "ai <prompt> | <reply to an image>",
+    usage: "copilot <prompt> | <reply to an image>",
     version: "1.5",
 
     execute: async ({ api, event, args }) => {
